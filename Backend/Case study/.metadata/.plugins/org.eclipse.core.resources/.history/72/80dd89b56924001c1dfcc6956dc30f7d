@@ -1,0 +1,13 @@
+package com.casestudy.CarWasher;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CarWasherApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CarWasherApplication.class, args);
+	}
+
+}

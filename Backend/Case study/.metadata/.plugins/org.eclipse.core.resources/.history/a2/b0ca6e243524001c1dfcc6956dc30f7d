@@ -1,0 +1,25 @@
+package com.casestudy.admin.orders.models;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@Document(collection = "orderDetails")
+public class OrderDetails {
+ 
+	@Id
+    public int orderId;
+	public String customerId ;
+    public String customername;
+    public String customeremaiId;
+    public  carDetails cardetails;
+    public  carwashers washer;
+    public String status;
+    
+}

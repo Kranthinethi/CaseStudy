@@ -1,0 +1,14 @@
+package com.dailycodebuffer.jwt.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.dailycodebuffer.jwt.model.UserDetails;
+
+
+
+public interface UserRespository  extends MongoRepository<UserDetails,Integer>{
+	
+	List<UserDetails> findByEmailId(String emailId);
+}

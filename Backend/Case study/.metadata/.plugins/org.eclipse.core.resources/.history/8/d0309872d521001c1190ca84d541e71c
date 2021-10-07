@@ -1,0 +1,13 @@
+package com.casestudy.admin.signup.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+
+import com.casestudy.customer.signUpLogin.models.UserDetails;
+
+public interface UserRespository  extends MongoRepository<UserDetails,Integer>{
+	
+	List<UserDetails> findByEmailId(String emailId);
+}

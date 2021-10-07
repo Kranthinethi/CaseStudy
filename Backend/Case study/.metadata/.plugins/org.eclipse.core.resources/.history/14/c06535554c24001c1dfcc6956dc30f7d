@@ -1,0 +1,10 @@
+package com.casestudy.admin.orders.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.casestudy.admin.orders.models.OrderDetails;
+
+public interface orderrepository  extends  MongoRepository<OrderDetails,Integer>{
+
+}
+

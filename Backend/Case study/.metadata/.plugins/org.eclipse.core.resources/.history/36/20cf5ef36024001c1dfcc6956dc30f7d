@@ -1,0 +1,35 @@
+package com.casestudy.admin.orders.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.casestudy.admin.orders.models.OrderDetails;
+import com.casestudy.admin.orders.repository.orderrepository;
+
+@RestController
+@CrossOrigin(origins = "*")
+@RequestMapping("/orders")
+public class orderController {
+
+	@Autowired
+	orderrepository repository;
+	
+	@PostMapping("/addorders")
+	public String addOrder(@RequestBody OrderDetails order)
+	{
+		repository.save(order);
+		return "success with order Id"+order.getId();
+	}
+	
+	@GetMapping("/findOrders")
+	public List<OrderDetails> getorders(){
+		return repository.findAll();
+	}
+}

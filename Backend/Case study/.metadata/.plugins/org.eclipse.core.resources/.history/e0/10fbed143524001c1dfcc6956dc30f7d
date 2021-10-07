@@ -1,0 +1,12 @@
+package com.casestudy.admin.orders.models;
+
+public class OrderDetails {
+
+	public String customerId ;
+    public String customername;
+    public String customeremaiId;
+    
+    public  carDetails cardetails;
+    public  String washer
+    public String status
+}

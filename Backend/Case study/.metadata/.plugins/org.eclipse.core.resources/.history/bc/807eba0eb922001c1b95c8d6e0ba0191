@@ -1,0 +1,13 @@
+package com.casestudy.customer.CarDetails.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+
+import com.casestudy.customer.signUpLogin.models.UserDetails;
+
+public interface carDetailsRepository  extends MongoRepository<UserDetails,Integer>{
+	
+	List<UserDetails> findByEmailId(String emailId);
+}

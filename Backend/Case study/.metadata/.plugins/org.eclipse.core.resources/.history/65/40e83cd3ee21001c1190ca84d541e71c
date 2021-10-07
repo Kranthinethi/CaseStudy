@@ -1,0 +1,14 @@
+package com.casestudy.CarWasher.signUp.repository;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.casestudy.CarWasher.signUp.models.carwashers;
+import com.casestudy.admin.signup.model.admin;
+
+
+public interface carWasherRepository  extends MongoRepository<carwashers,Integer>{
+	
+	List<carwashers> findByEmailId(String emailId);
+}

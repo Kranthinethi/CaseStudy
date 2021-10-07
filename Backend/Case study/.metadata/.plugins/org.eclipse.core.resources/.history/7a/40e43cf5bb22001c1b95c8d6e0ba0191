@@ -1,0 +1,5 @@
+package com.casestudy.customer.CarDetails.controller;
+
+public class carDetailsController {
+
+}

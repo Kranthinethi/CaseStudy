@@ -1,0 +1,5 @@
+package com.casestudy.admin.orders.repository;
+
+public class orderrepository {
+
+}

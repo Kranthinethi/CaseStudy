@@ -1,0 +1,5 @@
+package com.casestudy.admin.orders.controlle.models;
+
+public class OrderDetails {
+
+}

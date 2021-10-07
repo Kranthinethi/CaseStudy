@@ -1,0 +1,5 @@
+package com.casestudy.admin.services;
+
+public class EmailSenderService {
+
+}
